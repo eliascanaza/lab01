@@ -35,7 +35,7 @@ nav{
     border-radius: 2em;
     border-width: 1px;
 }
-nav hr{
+hr{
     border-color: rgb(175, 221, 178);
     border-style: dotted;
 }
@@ -46,7 +46,7 @@ nav p::first-letter{
 }
 .description h2{
     color: green;
-    font-size: +2;
+    font-size: 1.2em;
 }
 .description img{
     width: 200px;
