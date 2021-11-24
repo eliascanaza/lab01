@@ -1,0 +1,78 @@
+/***
+* General
+*/
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Medium.ttf);
+}
+body{
+    font-family: "Open Sans",sans-serif;
+}
+
+.gradient {
+    background: linear-gradient(-15deg, #72b626 50%, #e9fcd4 50%);
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -70%;
+    z-index: -1;
+}
+/***
+* Photo
+*/
+#photo{
+    width: 25%;
+}
+/***
+* content
+*/
+#content {
+    width: 74%;
+    text-align: center;
+}
+#photo, #content{
+    display: inline-block;
+    position: relative;
+}
+#content h1,
+#content h2 {
+    font-family: "Poppins",sans-serif;
+    font-size: 51px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+#content h1 {
+    color: #72b626;
+}
+#content h2{
+    font-size: 2em;
+    margin-left: 1em;
+    color: #666;
+}
+#content p {
+    line-height: 35px;
+    color: #666;
+    padding: 0 25%;
+    
+    margin: 2.5em 0;
+}
+#content .more{
+    border: 2px solid #72b626;
+    border-radius: 30px;
+    color: #666;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#content .more i{
+    font-size: 2em;
+    vertical-align: middle;
+}
+#content .more:hover{
+    background-color: #72b626;
+    color: #fff;
+}
