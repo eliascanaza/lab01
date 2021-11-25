@@ -1,0 +1,146 @@
+body{
+    background-color: #f0fbff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+nav{
+    background-color: #e0e2de;
+    border-bottom: 1px solid #3cb1db;
+}
+nav ul{
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav .menu ul{
+    background-color: lightgrey;
+    padding: 1em 2em;
+    padding-left: 0;
+}
+nav .menu ul li a {
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #2e94b9;
+}
+nav .menu ul li a:hover{
+    text-decoration: underline;
+    background-color: #2e94b9;
+    color:  white;
+}
+nav .menu ul li:first-child {
+    margin-left: 0em;
+}
+nav .search {
+    padding: 1em 2em;
+}
+nav .search img.logo{
+    width: 270px;
+    vertical-align: middle;
+}
+nav .search input{
+    padding: .6em;
+    border: 1px solid #cdcdcd;
+    margin-left: 2em;
+    width: 70%;
+}
+nav .search button{
+    padding: 0.5em 0.6em;
+    border: 1px solid #2d94b9;
+    background: lightgrey;
+    font-weight: bold;
+    color: #2d94b9;
+}
+nav .search button:hover{
+    background-color: white;
+}
+nav .search img {
+    vertical-align: middle;
+}
+nav .search img.car {
+    width: 38px;
+}
+nav .search>li {
+    width: 33%;
+}
+nav .search>li:last-child{
+    text-align: end;
+    color: #2d94b9;
+}
+#banner {
+    height: 500px;
+    background-color: #2e94b9;
+    padding: 2em;
+}
+#banner h2 {
+    font-size: 3em;
+    color: aqua;
+}
+#banner h3 {
+    font-size: 7em;
+    color: lightgrey;
+    margin: 0;
+}
+#banner h4 {
+    color: #8bcbe3;
+}
+#products .list {
+    overflow-x: hidden;
+    display: flex;
+    margin: 1em 0;
+}
+#products .list .product{
+    width: 100%;
+    margin: 0 2em 0 0;
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
+#products .list .product:hover{
+    background-color: #bfbfbf;
+}
+#products .list .product img{
+    width: 100%;
+}
+#products .list .product .price span{
+    display: block;
+}
+#products .list .product .price span.oldPrice{
+    color: #8a8989;
+    text-decoration: line-through;
+}
+#products .list .product .price span.lastPrice{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#products .list .product .price span.lastPrice i {
+    font-size: 17px;
+}
+#products .list .product .price .name{
+    font-weight: bold;
+    color: darkslategray;
+    font-size: 1.2em;
+}
+/*
+General
+*/
+.width80{
+    margin:  0 auto;
+    width: 80%;
+}
+/** Footer */
+footer{
+    background-color: grey;
+    text-align: center;
+    
+}
+footer ul {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+}
+footer ul li{
+    display: inline-block;
+}
