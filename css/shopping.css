@@ -3,6 +3,9 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
+/*
+Nav
+*/
 nav{
     background-color: #e0e2de;
     border-bottom: 1px solid #3cb1db;
@@ -15,7 +18,7 @@ nav ul li {
 }
 nav .menu ul{
     background-color: lightgrey;
-    padding: 1em 2em;
+    padding: 1em 0;
     padding-left: 0;
 }
 nav .menu ul li a {
@@ -32,7 +35,10 @@ nav .menu ul li:first-child {
     margin-left: 0em;
 }
 nav .search {
-    padding: 1em 2em;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 nav .search img.logo{
     width: 270px;
@@ -41,7 +47,6 @@ nav .search img.logo{
 nav .search input{
     padding: .6em;
     border: 1px solid #cdcdcd;
-    margin-left: 2em;
     width: 70%;
 }
 nav .search button{
@@ -60,38 +65,79 @@ nav .search img {
 nav .search img.car {
     width: 38px;
 }
-nav .search>li {
-    width: 33%;
+nav .search .first {
+    flex-grow: 1;
 }
-nav .search>li:last-child{
-    text-align: end;
-    color: #2d94b9;
+nav .search .second {
+    flex-grow: 1;
 }
+nav .search .third {
+    flex-grow: 1;
+    text-align: right;
+}
+/*
+Banner
+*/
 #banner {
     height: 500px;
     background-color: #2e94b9;
-    padding: 2em;
+    padding: 2em 0;
 }
 #banner h2 {
     font-size: 3em;
-    color: aqua;
+    color: lightgrey;
 }
 #banner h3 {
     font-size: 7em;
-    color: lightgrey;
+    color: aqua;
     margin: 0;
+    line-height: 94px;
+}
+#banner h3 i{
+    font-size: .5em;
+    vertical-align: super;
 }
 #banner h4 {
     color: #8bcbe3;
 }
+#banner .container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: 
+    "promo1 . ."
+    "promo2 promo2 ."
+    "promo3 promo3 promo4";
+}
+.promo-product-1 {
+    grid-area: promo1;
+    background-color: #37a1c7;
+}
+.promo-product-3 {
+    grid-area: promo2;
+    background-color: #51a8c7;
+}
+.promo-product-4 {
+    grid-area: promo3;
+    background-color: #6ab1cb;
+}
+.promo-product-8 {
+    grid-area: promo4;
+    background-color: #43a1c3;
+}
+/*
+Products
+*/
 #products .list {
     overflow-x: hidden;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 1em 0;
 }
 #products .list .product{
-    width: 100%;
-    margin: 0 2em 0 0;
+    width: 220px;
+    margin: 1em 2em 0 0;
     background-color: #ffffff;
     padding: 1em;
     border-radius: 10px;
