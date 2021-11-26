@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page - WAP</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <section id="form-register">
+        <form action="#" method="get">
+            <div class="form width80">
+                <div class="header">
+                    <h2>Workshop Registration</h2>
+                </div>
+                <div class="left-side">
+                    <div>
+                        <label for="first-name">First Name <i>*</i></label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name <i>*</i></label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div>
+                        <label for="institution">Company/Institution <i>*</i></label>
+                        <input type="text" id="institution" name="institution" required>
+                    </div>
+                    <div>
+                        <label for="address">Address <i>*</i></label>
+                        <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" >
+                    </div>
+                    <div>
+                        <label for="state">State/Province/Region</label>
+                        <select name="state" id="state">
+                            <option value="01">IOWA</option>
+                            <option value="02">Chicago</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="01">EEUU</option>
+                            <option value="02">Perú</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">Email <i>*</i></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number <i>*</i></label>
+                        <input type="number" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div>
+                        <a href="#">Lunch</a>
+                    </div>
+                    <div>
+                        <label for="meal">Meal preference</label>
+                        <select name="meal" id="meal">
+                            <option value="01">Vegetarian</option>
+                            <option value="02">None</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a href="#">Payment details</a>
+                    </div>
+                    <div>
+                        <label>Payment Mode</label>
+                        <div class="check-inputs">
+                            <div>
+                                <input type="checkbox" name="cash" id="cash">
+                                <label for="cash">Cash</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cheque" id="cheque">
+                                <label for="cheque">Cheque</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="deman" id="deman">
+                                <label for="deman">Demand Draft</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="cheque">DD/Cheque No.</label>
+                        <input type="text" id="cheque" name="cheque">
+                    </div>
+                    <div>
+                        <label for="bank">Drawn On(Bank Name)</label>
+                        <input type="text" id="bank" name="bank">
+                    </div>
+                    <div>
+                        <label for="payable">Payable at</label>
+                        <input type="text" id="payable" name="payable">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

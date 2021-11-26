@@ -1,0 +1,81 @@
+body{
+    background-color: #f0fbff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+#form-register .form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "col1 col2"
+    "button button";
+}
+#form-register .form input[type='text'],
+#form-register .form input[type='email'],
+#form-register .form input[type='number'],
+#form-register .form select{
+    padding: .4em;
+    width: 40%;
+}
+#form-register .form i{
+    color: red;
+    font-weight: bold;
+}
+.left-side {
+    grid-area: col1;
+}
+.left-side > div,
+.right-side > div {
+    display: flex;
+}
+.right-side {
+    grid-area: col2;
+}
+.left-side , .right-side {
+    margin: 1em 0;
+}
+.left-side > div, .right-side > div{
+    margin: .5em 0;
+}
+.left-side label, .right-side label{
+    font-size: 0.8em;
+    width: 30%;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: #cde9ce;
+}
+.header h2 {
+    font-size: 1em;
+    color: #3b743d;
+}
+.buttons {
+    grid-area: button;
+    text-align: center;
+    padding: 1em;
+    background-color: #e7e7e7;
+}
+.buttons input[type='submit'],
+.buttons input[type='reset'] {
+    background-color: #cde9ce;
+    padding: 0.7em 2em;
+    font-weight: bold;
+    color: #3b743d;
+    border: 2px solid #3b743d;
+    border-radius: 10px;
+}
+.buttons input[type='submit']:hover,
+.buttons input[type='reset']:hover{
+    background-color: green;
+    color: white;
+}
+/*
+General
+*/
+.width80{
+    margin:  0 auto;
+    width: 80%;
+}
