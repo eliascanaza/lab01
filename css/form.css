@@ -79,3 +79,18 @@ General
     margin:  0 auto;
     width: 80%;
 }
+
+/** Footer */
+footer{
+    background-color: grey;
+    text-align: center;
+    
+}
+footer ul {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+}
+footer ul li{
+    display: inline-block;
+}
