@@ -41,8 +41,12 @@ hr{
 }
 /* pseudo-element */
 nav p::first-letter{
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: green;
+    float: left;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
 }
 .description h2{
     color: green;
