@@ -1,0 +1,83 @@
+body{
+    background-color: #f0fbff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+#form-register .form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "col1 col2";
+}
+#form-register .form i{
+    color: red;
+    font-weight: bold;
+}
+#form-register .form textarea {
+    width: 90%;
+    height: 200px;
+    padding: 1em;
+}
+#form-register .form button {
+    padding: .6em 1em;
+}
+.result {
+    padding: 1em;
+    background-color: #ededed;
+    border: 1px dotted gray;
+    width: 90%;
+}
+.result:before {
+    content: 'Result: ';
+    font-size: .8em;
+    font-weight: bold;
+    color: gray;
+}
+.left-side {
+    grid-area: col1;
+}
+.left-side > div,
+.right-side > div {
+    display: flex;
+}
+.right-side {
+    grid-area: col2;
+}
+.left-side , .right-side {
+    margin: 1em 0;
+}
+.left-side > div, .right-side > div{
+    margin: .5em 0;
+}
+.left-side label, .right-side label{
+    font-size: 0.8em;
+    width: 30%;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: #cde9ce;
+}
+/*
+General
+*/
+.width80{
+    margin:  0 auto;
+    width: 80%;
+}
+/** Footer */
+footer{
+    background-color: grey;
+    text-align: center;
+    
+}
+footer ul {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+}
+footer ul li{
+    display: inline-block;
+}
