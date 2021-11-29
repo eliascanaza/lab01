@@ -6,12 +6,11 @@ function sum(arr) {
     const sumMin = 20;
     let sum = 0;
 
-    const d = arr.reduce(function(prevValue, elem, i, array){
-        if(prevValue >= sumMin)
-            sum = prevValue;
-        return prevValue + elem;
+    arr.reduce(function(acc, elem, i, array){
+        if(acc >= sumMin)
+            sum = acc;
+        return acc + elem;
     });
-
     return sum;
 }
 
@@ -20,9 +19,9 @@ function sum(arr) {
  * Array, return a new array which contains all string, length is greater than and equal to 5, and
  * contains letter ‘a’.
  * */
-const getNewArray = function (arr) {
+const getNewArray = function getNewArray(arr) {
     const minLength = 5;
-    const newArr = arr.filter( s => s.length >= minLength && s.includes('a') );
+    const newArr = arr.filter( elem => elem.length >= minLength && elem.includes('a') );
     
     return "["+newArr+"]";
 };
